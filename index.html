@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="bloco">
+        <div class="container">
+            <input class="buscar-cidade" type="text" placeholder="Buscar por Cidade" required>
+            <button class="buscar-bloco" onclick="buscar()">
+                <img class="buscar-img" src="/src/images/lupa.svg" alt="Lupa">
+            </button>
+
+            <div class="bloco-info">
+                <h2 class="clima-titulo">Clima atual Rio de Janeiro</h2>
+
+                <p class="temp">21°C</p>
+
+                <div class="bloco-clima">
+                    <img class="clima-icone" src="https://openweathermap.org/img/wn/04n.png" alt="Clima icone">
+                    <p class="clima">Nublado</p>
+                </div>
+
+                <p class="umidade">Umidade: 75%</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
