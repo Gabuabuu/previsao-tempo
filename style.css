@@ -8,7 +8,7 @@
 body {
     background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fHww&w=1000&q=80");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ body {
 .buscar-cidade {
     text-align: center;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 50px;
     border: none;
     outline: none;
     width: calc(100% - 100px);
@@ -74,4 +74,71 @@ body {
 .clima-titulo {
     font-size: 24px;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .bloco {
+        background: rgba(13, 1, 1, 0.6);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        padding: 20px;
+        border-radius: 20px;  
+        width: 340px;
+        color: #ffffff;
+    }
+    .buscar-cidade {
+        text-align: center;
+        font-size: 1.2em;
+        /* width: 240px; */
+        width: 75%;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        padding: 6px;
+        margin: 10px;
+        background-color: #7c7c7c2b;
+        color: #ffffff;
+    }
+    .buscar-bloco {
+        outline: none;
+        border: none;
+        padding: 10px;
+        background-color: #7c7c7c2b;
+        width: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        float: right;
+    }
+    .clima-titulo {
+        font-size: 1.3em;
+        font-weight: 300;
+        margin: 10px;
+    }
+    .bloco-clima {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .bloco-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .bloco-clima-mobile {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    
+    .umidade {
+        font-size: 1.2em;
+    }
+
 }
