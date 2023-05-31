@@ -1,7 +1,7 @@
 let image = document.querySelector('body')
 
-var data = new Date()
-var hour = data.getHours()
+let data = new Date()
+let hour = data.getHours()
 if(hour >= 6 && hour < 12){
     //BOM DIA
     document.querySelector("[class='bg-image']").style.backgroundImage = 'url(src/images/sunrise-mountain.jpg)'
